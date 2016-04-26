@@ -1,0 +1,66 @@
+{
+  "bot": {
+    "name": "super-bot",
+    "server": {
+      "app_token": "",
+      "channel": "general"
+    }
+  },
+  "database": {},
+  "logger": {
+    "levels": {
+      "info": 1,
+      "warn": 2,
+      "error": 3
+    },
+    "colors": {
+      "info": "green",
+      "warn": "yellow",
+      "error": "red"
+    },
+    "file": "./logs/main.log"
+  },
+  "modules": {
+    "ping": {
+      "enabled": true,
+      "options": {
+        "key": "value"
+      }
+    },
+    "guru": {
+      "enabled": true,
+      "options": {}
+    },
+    "cleaning": {
+      "enabled": true,
+      "options": {
+        "cleaners": [
+          "odysseasgp",
+          "kpelelis",
+          "penny",
+          "makrina",
+          "foivoc",
+          "iliana",
+          "alexis",
+          "xphstos",
+          "natalia"
+        ]
+      }
+    },
+    "linkchecker": {
+      "enabled": true,
+      "options": {}
+    },
+    "raffle": {
+      "enabled": true,
+      "options": {
+        "interval": 0.25,
+        "maxUsers": 10
+      }
+    },
+    "blackjack": {
+      "enabled": true,
+      "options": {}
+    }
+  }
+}

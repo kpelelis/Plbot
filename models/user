@@ -1,0 +1,21 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var userSchema = new Schema({
+	name: {
+		type: String,
+		required: true,
+		unique: true
+	},
+	level: {
+		type: Number,
+		required: true
+	},
+	banned: {
+		type: Boolean,
+		default: true
+	}
+});
+
+module.exports.schema = userSchema;
+module.exports.name = 'user';
